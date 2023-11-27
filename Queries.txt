@@ -1,0 +1,9 @@
+goal(S).
+
+goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
+
+goal(result(b1, result(reqf, result(reqm, result(b2, result(reqf, result(reqm, result(reqm, result(reqf, result(reqe, result(reqf, s0))))))))))).
+
+goal(result(b2, result(reqf, result(reqf, result(reqf, result(reqf, result(reqm, result(reqe, result(b1, result(reqm, result(reqm, s0))))))))))).
+
+goal(result(b1, result(reqf, s0))).
