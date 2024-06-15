@@ -47,35 +47,41 @@ Important Note: You might write your successor state axioms correctly, yet when 
 ```
 - Query1:
 ```plaintext
- goal(S).
+goal(S).
  ```
 - Output1:
 ```plaintext
- S = result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0)))))))))).
+S = result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0)))))))))).
 ```
-  
 - Query2:
 ```plaintext
- goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
+goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
 ```
-- Output2: ```plaintext
-          true.
-          ```
-- Query3: ```plaintext
-          goal(result(b1, result(reqf, result(reqm, result(b2, result(reqf, result(reqm,result(reqm, result(reqf, result(reqe, result(reqf, s0))))))))))).
-          ```
-- Output3: ```plaintext
-           true.
-           ```
-- Query4: ```plaintext
-          goal(result(b2, result(reqf, result(reqf, result(reqf, result(reqf, result(reqm, result(reqe, result(b1, result(reqm, result(reqm, s0))))))))))).
-          ```
-- Output4: ```plaintext
-          true.
-          ```
-- Query5: ```plaintext
-           goal(result(b1, result(reqf, s0))).
-          ```
-- Output5: ```plaintext
-           false.
-           ```
+- Output2:
+```plaintext
+true.
+ ```
+- Query3:
+```plaintext
+goal(result(b1, result(reqf, result(reqm, result(b2, result(reqf, result(reqm,result(reqm, result(reqf, result(reqe, result(reqf, s0))))))))))).
+ ```
+- Output3:
+```plaintext
+true.
+```
+- Query4:
+```plaintext
+goal(result(b2, result(reqf, result(reqf, result(reqf, result(reqf, result(reqm, result(reqe, result(b1, result(reqm, result(reqm, s0))))))))))).
+```
+- Output4:
+```plaintext
+true.
+```
+- Query5:
+```plaintext
+goal(result(b1, result(reqf, s0))).
+```
+- Output5:
+```plaintext
+false.
+```
