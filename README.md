@@ -85,3 +85,9 @@ goal(result(b1, result(reqf, s0))).
 ```plaintext
 false.
 ```
+
+# Technologies
+
+- Prolog
+
+- Notepad++
