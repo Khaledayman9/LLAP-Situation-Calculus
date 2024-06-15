@@ -48,9 +48,11 @@ Important Note: You might write your successor state axioms correctly, yet when 
 - Query1: ```plaintext
          goal(S).
           ```
+  
 - Output1: ```plaintext
             S = result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0)))))))))).
           ```
+  
 - Query2: ```plaintext
           goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
           ```
