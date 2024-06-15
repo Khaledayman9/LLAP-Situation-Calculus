@@ -45,17 +45,19 @@ Important Note: You might write your successor state axioms correctly, yet when 
  build1(1,2,1).
  build2(4,1,2).
 ```
-- Query1: ```plaintext
-         goal(S).
-          ```
+- Query1:
+```plaintext
+ goal(S).
+ ```
+- Output1:
+```plaintext
+ S = result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0)))))))))).
+```
   
-- Output1: ```plaintext
-            S = result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0)))))))))).
-          ```
-  
-- Query2: ```plaintext
-          goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
-          ```
+- Query2:
+```plaintext
+ goal(result(b1, result(reqf, result(reqm, result(reqm, result(reqe, result(b2, result(reqf, result(reqf, result(reqf, result(reqm, s0))))))))))).
+```
 - Output2: ```plaintext
           true.
           ```
