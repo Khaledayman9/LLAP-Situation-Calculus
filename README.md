@@ -87,7 +87,5 @@ false.
 ```
 
 # Technologies
-
 - Prolog
-
 - Notepad++
